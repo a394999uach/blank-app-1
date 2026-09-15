@@ -1,6 +1,18 @@
 import streamlit as st
 
-st.title("🎈 My new app")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
+st.title("Control de acceso")
+
+edad = st.number_input(
+    "Edad:",
+    min_value=0,
+    value=18)
+
+tiene_identificacion = st.checkbox(
+    "Tiene identificación")
+
+
+
+if edad>=18vand tine tiene_identificacion:
+    st.write("Puede ingresar.")
+else:
+    st.write("No puede ingresar.")
